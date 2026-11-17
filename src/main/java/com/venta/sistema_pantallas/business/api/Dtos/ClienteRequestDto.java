@@ -37,7 +37,7 @@ public class ClienteRequestDto {
 
     @NotNull(message = "El límite de crédito es obligatorio")
     @DecimalMin(value = "0.00", message = "El límite de crédito no puede ser negativo")
-    @Digits(integer = 8, fraction = 2, message = "Formato de límite de crédito inválido")
+    @Digits(integer = 8, fraction = 2, message = "Formato de límite de crédito inválido.")
     @Builder.Default
     private BigDecimal limiteCredito = BigDecimal.ZERO;
 }
